@@ -1,0 +1,32 @@
+{
+  "name": "car-mgnt-api",
+  "version": "1.0.0",
+  "description": "car-mgnt-api",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --timeout 15000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevebhansen/car-mgnt-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stevebhansen/car-mgnt-api/issues"
+  },
+  "homepage": "https://github.com/stevebhansen/car-mgnt-api#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-paginate": "^1.0.2",
+    "mongodb": "^4.1.2",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^9.1.1",
+    "mongo-unit": "^2.0.1",
+    "sinon": "^11.1.2"
+  }
+}
