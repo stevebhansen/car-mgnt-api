@@ -17,12 +17,11 @@ function connect(callback){
         let count = 0;
         count = db.collection('counters').findOne({_id: "carid"})
             .then(item => {
-                console.log(item)
-                if (!item.seq) {
+                if (!item) {
                     try {
                         db.collection('counters').updateOne(
                             { _id: "carid"},
-                            { $set: { _id: "carid",  seq: 0 }},
+                            { $set: { _id: "carid",  seq: 1 }},
                             { upsert: true }
                             );
                     } catch (err) {
